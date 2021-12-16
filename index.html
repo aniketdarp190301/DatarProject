@@ -68,7 +68,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item px-lg-4">
-            <a class="nav-link active" aria-current="page" href="#">Products</a>
+            <a class="nav-link active" aria-current="page" href="products.html">Products</a>
           </li>
           <li class="nav-item px-lg-4">
             <a class="nav-link" href="#">About</a>
@@ -87,24 +87,29 @@
   <header>
 
     <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
-    <div class="overlay"></div>
-  
-    <!-- The HTML5 video element that will create the background video on the header -->
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="./assets/01.24.mp4">
-    </video>
-  
-    <!-- The header content -->
-    <div class="container h-100">
-      <div class="d-flex h-100 text-center align-items-center">
-        <div class="w-100 text-white">
-          <p >
-            “Coming together is a beginning,<br>keeping together is progress, working together is success”
-          </p>
-          <p class="fw-bold">- Henry Ford Sr.</p>
+    <div class="hero">
+      <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-white">
+            <p >
+              “Coming together is a beginning,<br>keeping together is progress, working together is success”
+            </p>
+            <p class="fw-bold">- Henry Ford Sr.</p>
+          </div>
         </div>
       </div>
+
+      <video autoplay muted loop class="heroVideo">
+        <source src="assets/01.24.mp4" type="video/mp4">
+      </video>
     </div>
+  
+    <!-- The HTML5 video element that will create the background video on the header -->
+    <!-- <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="./assets/01.24.mp4">
+    </video> -->
+  
+    <!-- The header content -->
   </header>
   <section class="text-center fs-5 pt-4 bg-white" id="premise">
     <p><strong>Datar Engineering</strong> is a leading provider of<br> 

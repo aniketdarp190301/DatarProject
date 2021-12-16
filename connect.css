@@ -2,14 +2,11 @@ body {
   background-color: #fff;
 }
 
-#connect {
-  height: 100vh;
-  width: 100%;
-}
-
 .connectBox {
   background-color: #f9a700;
   color: #443f41;
+  max-width: 50%;
+  margin-bottom: 100px;
 }
 
 .connectBox p {
