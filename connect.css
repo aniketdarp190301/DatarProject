@@ -1,14 +1,14 @@
-body {
+.body {
   background-color: #fff;
 }
-
-.connectBox {
+.contactUs {
   background-color: #f9a700;
-  color: #443f41;
-  max-width: 50%;
-  margin-bottom: 100px;
 }
-
-.connectBox p {
-  font-size: 16px;
+.map {
+  min-height: 100%;
+  /* border: 3px solid #000; */
+}
+.map iframe {
+  min-width: 100%;
+  min-height: 500px;
 }
