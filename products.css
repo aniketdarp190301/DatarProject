@@ -2,6 +2,10 @@
   background: rgba(0, 0, 0, 0.5);
 }
 
+#mainProducts .container:hover{
+  background: rgb(0,0,0,0.9);
+}
+
 #mainProducts .container p {
   font-size: 14px;
 }
@@ -36,7 +40,8 @@
 }
 
 #productImg,
-#productContent {
+#productContent,
+#productVideo {
   background: #f2f2f2;
 }
 
@@ -59,3 +64,14 @@
 .productDescVid {
   width: 100%;
 }
+
+#productLeva{
+  text-align: center;
+  background-color: #f2f2f2;
+  padding-top: 1.5em;
+}
+
+/*#productContent:hover{
+  color: blue;
+}
+
