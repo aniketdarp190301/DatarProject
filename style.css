@@ -18,6 +18,7 @@ body {
   top: 0;
   font-family: 'Metropolis', sans-serif;
   z-index: 100;
+  min-width: 100%;
 }
 
 #mainNav .nav-link {
@@ -106,12 +107,37 @@ header .overlay {
   z-index: 2;
 }
 
+/* .productImageEx {
+  transition: 1s;
+}
+
+.productImageEx:hover {
+  transform: scale(1.05);
+} */
+
 .mainBody {
   margin-top: 100px;
   border-top: #fff 3px solid;
   border-top-left-radius: 70px;
   border-top-right-radius: 70px;
   box-shadow: 0px -15px 10px -15px rgb(70, 70, 70);
+}
+
+#mainBodyVideo {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainBodyVideo video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* min-height: 100%; */
+  min-width: 100%;
 }
 
 .mainBodyTitle {
@@ -195,4 +221,17 @@ footer a:hover {
 .arrowIcon3:hover {
   transition: 0.5s;
   transform: rotate(90deg);
+}
+
+#india {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  padding: 200px 0px 100px 0px;
+}
+
+#india img {
+  max-width: 800px;
+  margin: 0 auto;
 }

@@ -17,7 +17,7 @@
 
 .aboutUsContent {
   z-index: 1;
-  max-width: 100%;
+  min-width: 100%;
 }
 
 .content1 {
@@ -58,7 +58,8 @@
 
 .content2Container {
   max-width: 844px;
-  box-shadow: 0px 0px 8px;
+  /* box-shadow: 0px 0px 8px; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   margin: 0 auto 200px auto;
   padding: 50px 0;
