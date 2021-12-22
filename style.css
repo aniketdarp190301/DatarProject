@@ -116,28 +116,31 @@ header .overlay {
 } */
 
 .mainBody {
-  margin-top: 100px;
+  margin: 100px 0;
   border-top: #fff 3px solid;
   border-top-left-radius: 70px;
   border-top-right-radius: 70px;
   box-shadow: 0px -15px 10px -15px rgb(70, 70, 70);
 }
 
+#mainBodyContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#mainBodyContent > * {
+  flex: 1 1 450px;
+}
+
 #mainBodyVideo {
-  position: relative;
+  /* position: relative; */
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-#mainBodyVideo video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* min-height: 100%; */
-  min-width: 100%;
 }
 
 .mainBodyTitle {
