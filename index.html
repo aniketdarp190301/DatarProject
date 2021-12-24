@@ -5,15 +5,21 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <link rel="stylesheet" href="style.css">
+  <script src="bower_components/aos/dist/aos.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Datar | Home </title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white py-3" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand px-lg-5" href="index.html">
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-white" id="mainNav">
+      <a class="navbar-brand px-lg-5 datar" href="index.html">
         <svg xmlns="http://www.w3.org/2000/svg" width="76.87" height="24.671" viewBox="0 0 76.87 24.671">
           <defs>
             <style>
@@ -62,9 +68,15 @@
           </g>
         </svg>        
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" id="navtoggle" type="button" data-bs-toggle="collapse" onclick="show()" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="bi bi-list"></span>
       </button>
+      <script>
+        function show() {
+            $('#navtoggle').find("span").toggleClass("bi-list bi-x");
+          }
+    
+      </script>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item px-lg-4">
@@ -77,11 +89,10 @@
             <a class="nav-link" href="caseStudies.html">Case Studies</a>
           </li>
         </ul>
-        <form class="d-flex">
-          <a class="nav-link" href="connect.html">Connect</a>
-        </form>
+        <div class="d-flex">
+          <a class="nav-link px-lg-5" href="connect.html">Connect</a>
+        </div>
       </div>
-    </div>
   </nav>
 
   <header>
@@ -91,10 +102,16 @@
       <div class="container h-100">
         <div class="d-flex h-100 text-center align-items-center">
           <div class="w-100 text-white">
+            <div data-aos="fade-up"
+		             data-aos-offset="200"
+		             data-aos-delay="100"
+		             data-aos-duration="1000"
+		             data-aos-easing="ease-in-out"style="text-align: center;">
             <p >
               “Coming together is a beginning,<br>keeping together is progress, working together is success”
             </p>
             <p class="fw-bold">- Henry Ford Sr.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -112,105 +129,165 @@
     <!-- The header content -->
   </header>
   <section class="text-center fs-5 pt-4 bg-white" id="premise">
-    <p><strong>Datar Engineering</strong> is a leading provider of<br> 
+    <div data-aos="fade-up"
+		data-aos-offset="200"
+		data-aos-delay="80"
+		data-aos-duration="1000"
+		data-aos-easing="ease-in-out"style="text-align: center;">
+    <p ><strong>Datar Engineering</strong> is a leading provider of<br> 
      <strong>Vertical Material Handling Solutions</strong> and manufacturer of<br> Custom engineered <strong>Vertical Reciprocating Conveyors (VRC).</strong><br>
       We manufacture VRCs for a variety of applications like<br> mezzanines, balconies, multi-level, multi-directional and thru-floor applications.</p>
-  </section>
+    </div>  
+    </section>
   <div class="container">
     <section id="products">
-      <p class="fs-3 fw-bold text-center productsTitle"><i class="fas fa-caret-up arrowIcon1"></i> OUR PRODUCTS</p>
+      <div data-aos="fade-up"
+		       data-aos-offset="200"
+		       data-aos-delay="100"
+		       data-aos-duration="1000"
+		       data-aos-easing="ease-in-out"style="text-align: center;">
+      <p class="fs-3 fw-bold text-center productsTitle">OUR PRODUCTS</p>
+      </div>
+      <div data-aos="fade-up"
+		data-aos-offset="200"
+		data-aos-delay="100"
+    data-aos-duration="1000"
+		data-aos-easing="ease-in-out"style="text-align: center;">
       <div class="row mb-lg-2">
         <div class="col-lg-1 col-12 mb-1"></div>
         <div class="col-lg-5 col-12 bg-white p-3 me-lg-1 mb-1">
           <div class="row">
             <div class="col-8 fw-bold my-auto fs-sm productName">
-              LEVA<br>(VERTICAL RECIPROCATING CONVEYOR)
+             <a href="products.html">LEVA<br>(VERTICAL RECIPROCATING CONVEYOR)</a> 
             </div>
             <div class="col-4">
-              <img src="./assets/Group 1478.png" alt="" class="img-fluid productImage">
+              <a href="products.html">
+                <img src="./assets/Group 1478.png" alt="" class="img-fluid productImage">
+              </a>
             </div>
           </div> <!-- inner row -->
         </div>
         <div class="col-lg-5 col-12 bg-white p-3 ms-lg-1 mb-1">
           <div class="row">
             <div class="col-8 fw-bold my-auto productName">
-              LEVA Duo
+              <a href="products.html">LEVA Duo</a> 
             </div>
             <div class="col-4">
-              <img src="./assets/Rectangle 346.png" alt="" class="img-fluid productImage">
+              <a href="products.html">
+                <img src="./assets/Rectangle 346.png" alt="" class="img-fluid productImage">
+              </a>
             </div>
           </div> <!-- inner row -->
         </div>
         <div class="col-lg-1 col-12 mb-1"></div>
       </div>
+      </div>
+      <div data-aos="fade-up"
+		data-aos-offset="200"
+		data-aos-delay="100"
+		data-aos-duration="1000"
+		data-aos-easing="ease-in-out"style="text-align: center;">
       <div class="row mb-lg-2">
         <div class="col-lg-1 col-12 mb-1"></div>
         <div class="col-lg-5 col-12 bg-white p-3 me-lg-1 mb-1">
           <div class="row">
             <div class="col-8 fw-bold my-auto fs-sm productName">
-              SPIROTRAC (SPIRAL GRAVITY CHUTE)
+              <a href="products.html">SPIROTRAC (SPIRAL GRAVITY CHUTE)</a> 
             </div>
             <div class="col-4">
-              <img src="./assets/Rectangle 381.png" alt="" class="img-fluid productImage">
+              <a href="products.html">
+                <img src="./assets/Rectangle 381.png" alt="" class="img-fluid productImage">
+              </a>
             </div>
           </div> <!-- inner row -->
         </div>
         <div class="col-lg-5 col-12 bg-white p-3 ms-lg-1 mb-1">
           <div class="row">
             <div class="col-5 fw-bold my-auto productName">
-              VITA (GRAVITY CHUTE)
+              <a href="products.html">VITA (GRAVITY CHUTE)</a> 
             </div>
             <div class="col-7">
-              <img src="./assets/Rectangle 384.jpg" alt="" class="img-fluid productImage">
+              <a href="products.html">
+                <img src="./assets/Rectangle 384.jpg" alt="" class="img-fluid productImage">
+              </a>
             </div>
           </div> <!-- inner row -->
         </div>
         <div class="col-lg-1 col-12 mb-1"></div>
       </div>
+      </div>
     </section>
   </div>
-
-  <!-- <section class="mainBody bg-white">
-    <p class="fs-3 fw-bold text-center mainBodyTitle">WHAT IS VERTICAL RECIPROCATING CONVEYOR ?</p>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-6 mainBodyBody text-center text-lg-end">
-          Vertical Reciprocating Conveyors are essentially used for transportation of materials from one level to another in factories, warehouses, institutions, among many others. Vertical Reciprocating Conveyors are used for transportation of materials only. Vertical Reciprocating Conveyors provide fast, efficient, convenient and safe access to mezzanines, balconies, storage racks and other areas within multi-level buildings. They can be installed either in the interior of the building or on the exterior. Vertical Reciprocating Conveyors have versatility of entry and exit methods. Same side entry-exits, opposite side entry-exits or 90 degree entry-exit patterns can be implemented with ease as per the requirements of the customer. Vertical Reciprocating Conveyors typically consist of guide beams, carriage, drive mechanism and a protective enclosure for safety purposes.<br><br> 
-          Datar Engineering and Consultancy Pvt. Ltd. has an experience of over 15 years in the design and manufacturing of Vertical Reciprocating Conveyors, with over 800 installations to our name. Along with our superior design and manufacturing capability, we bring you highly advanced safety systems with our VRC’s. Safety is our focus. The revolutionary “Safety-Cam” concept is the pride of our company. In these years of experience we have solved a variety of vertical transportation problems. We have designed and manufactured a range of VRC’s having capacity of 50kgs to 5000 kgs, and heights varying from 2000 mm. to 30000 mm. Since every application is unique, every lift is tailor made to suit the customer’s vertical lifting needs. Our experienced engineers design every lift with regard to individual requirements and constraints. At Datar Engineering, we have an excellent reputation with regard to design and after sales service.
-        </div>
-        <div class="col-12 col-lg-6" id="mainBodyVideo">
-          <video autoplay muted loop playsinline>
-            <source src="./assets/01.24.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </section> -->
   <section class="mainBody bg-white">
+    <div data-aos="fade-up"
+		data-aos-offset="200"
+		data-aos-delay="100"
+		data-aos-duration="1000"
+		data-aos-easing="ease-in-out"style="text-align: center;">
     <p class="fs-3 fw-bold text-center mainBodyTitle">WHAT IS VERTICAL RECIPROCATING CONVEYOR ?</p>
+    </div>
     <div class="container">
       <div id="mainBodyContent">
         <div id="mainBodyText">
+          <div data-aos="fade-up"
+		data-aos-offset="200"
+		data-aos-delay="100"
+		data-aos-duration="1000"
+		data-aos-easing="ease-in-out"style="text-align: center;">
           <p class="fs-6 text-center text-lg-end">
             Vertical Reciprocating Conveyors are essentially used for transportation of materials from one level to another in factories, warehouses, institutions, among many others. Vertical Reciprocating Conveyors are used for transportation of materials only. Vertical Reciprocating Conveyors provide fast, efficient, convenient and safe access to mezzanines, balconies, storage racks and other areas within multi-level buildings. They can be installed either in the interior of the building or on the exterior. Vertical Reciprocating Conveyors have versatility of entry and exit methods. Same side entry-exits, opposite side entry-exits or 90 degree entry-exit patterns can be implemented with ease as per the requirements of the customer. Vertical Reciprocating Conveyors typically consist of guide beams, carriage, drive mechanism and a protective enclosure for safety purposes.<br><br> Datar Engineering and Consultancy Pvt. Ltd. has an experience of over 15 years in the design and manufacturing of Vertical Reciprocating Conveyors, with over 800 installations to our name. Along with our superior design and manufacturing capability, we bring you highly advanced safety systems with our VRC’s. Safety is our focus. The revolutionary “Safety-Cam” concept is the pride of our company. In these years of experience we have solved a variety of vertical transportation problems. We have designed and manufactured a range of VRC’s having capacity of 50kgs to 5000 kgs, and heights varying from 2000 mm. to 30000 mm. Since every application is unique, every lift is tailor made to suit the customer’s vertical lifting needs. Our experienced engineers design every lift with regard to individual requirements and constraints. At Datar Engineering, we have an excellent reputation with regard to design and after sales service.
           </p>
+          </div>
         </div>
         <div id="mainBodyVideo">
+          <div data-aos="fade-up"
+		             data-aos-offset="200"
+		             data-aos-delay="100"
+		             data-aos-duration="1000"
+		             data-aos-easing="ease-in-out"style="text-align: center;">
           <video autoplay muted loop playsinline>
             <source src="./assets/01.24.mp4" type="video/mp4">
           </video>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <section id="india" class="d-none d-lg-flex">
-    <div class="container">
-      <img src="./assets/india.jpg" alt="" class="img-fluid">
+  <section id="indiaImage">
+    <div data-aos="fade-up"
+		data-aos-offset="200"
+		data-aos-delay="100"
+		data-aos-duration="1000"
+		data-aos-easing="ease-in-out"style="text-align: center;">
+    <div class="indiaCard">
+      <div class="backCircle"></div>
+      <div class="cardContent fs-5">
+        <div data-aos="fade-up"
+		data-aos-offset="200"
+		data-aos-delay="100"
+    data-aos-duration="1000"	
+		data-aos-easing="ease-in-out"style="text-align: center;">
+        <strong>1500+</strong> VRCs successfully manufactured & delivered across <strong>India</strong>
+        </div>
+      </div>
+      <img src="./assets/Component 18 – 1.png" alt="">
+    </div>
     </div>
   </section>
   <section class="bg-white" id="clients">
+    <div data-aos="fade-up"
+		data-aos-offset="200"
+		data-aos-delay="100"
+		data-aos-duration="1000"
+		data-aos-easing="ease-in-out"style="text-align: center;">
     <p class="fs-3 fw-bold text-center clientsTitle">TOP CLIENTS</p>
+    </div>
     <div class="container px-5 py-3">
+      <div data-aos="fade-up"
+		data-aos-offset="200"
+		data-aos-delay="100"
+		data-aos-duration="1000"
+		data-aos-easing="ease-in-out"style="text-align: center;">
       <div class="row text-center">
         <div class="col-lg mx-4 d-block m-auto my-4">
           <img src="./assets/Rectangle 342.jpg" alt="" class="img-fluid">
@@ -230,6 +307,11 @@
       </div>
     </div>
     <div class="container px-5 py-3">
+      <div data-aos="fade-up"
+		data-aos-offset="200"
+		data-aos-delay="100"
+		data-aos-duration="1000"
+		data-aos-easing="ease-in-out"style="text-align: center;">
       <div class="row text-center">
         <div class="col-lg mx-4 my-4">
           <img src="./assets/aurobindo-pharma-vector-logo.jpg" alt="" class="img-fluid">
@@ -249,6 +331,11 @@
       </div>
     </div>
     <div class="container px-5 py-3">
+      <div data-aos="fade-up"
+		data-aos-offset="200"
+		data-aos-delay="100"
+		data-aos-duration="1000"
+		data-aos-easing="ease-in-out"style="text-align: center;">
       <div class="row text-center">
         <div class="col-lg mx-4 my-4">
           <img src="./assets/Rectangle 339.jpg" alt="" class="img-fluid">
@@ -271,7 +358,7 @@
 
   <section class="scrollToTop">
     <a href="#" class="mx-auto">
-      <i class="fas fa-caret-up fa-2x arrowIcon2"></i>
+      <i class="fas fa-chevron-up fa-2x arrowIcon2"></i>
     </a>
   </section>
 

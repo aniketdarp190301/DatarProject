@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="about.css">
+  <script src="bower_components/aos/dist/aos.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <!-- META -->
   <meta charset="UTF-8">
@@ -14,177 +16,284 @@
   <title>Datar | Home </title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white py-3" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand px-lg-5" href="index.html">
-        <svg xmlns="http://www.w3.org/2000/svg" width="76.87" height="24.671" viewBox="0 0 76.87 24.671">
-          <defs>
-            <style>
-              .cls-1 {
-                fill: #f9a700;
-              }
-        
-              .cls-2 {
-                fill: #443f41;
-              }
-        
-              .cls-3 {
-                fill: none;
-                stroke: #443f41;
-                stroke-miterlimit: 10;
-              }
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white" id="mainNav">
+    <a class="navbar-brand px-lg-5 datar" href="index.html">
+      <svg xmlns="http://www.w3.org/2000/svg" width="76.87" height="24.671" viewBox="0 0 76.87 24.671">
+        <defs>
+          <style>
+            .cls-1 {
+              fill: #f9a700;
+            }
+      
+            .cls-2 {
+              fill: #443f41;
+            }
+      
+            .cls-3 {
+              fill: none;
+              stroke: #443f41;
+              stroke-miterlimit: 10;
+            }
 
-              svg:hover .cls-1{
-                fill: #443f41;
-              }
+            svg:hover .cls-1{
+              fill: #443f41;
+            }
 
-              svg:hover .cls-2{
-                fill: #f9a700;
-              }
-            </style>
-          </defs>
-          <g id="Component_11_8" data-name="Component 11 – 8" transform="translate(0 0.5)">
-            <g id="Group_1455" data-name="Group 1455" transform="translate(0 3.981)">
-              <path id="Path_2463" data-name="Path 2463" class="cls-1" d="M219.284,320.136h-6.116l2.22-9.621,1.587,3.92.06.15,1.345,3.321Z" transform="translate(-213.169 -300.043)"/>
-              <path id="Path_2464" data-name="Path 2464" class="cls-2" d="M251.922,262.124a10.953,10.953,0,0,1-.8,4.111,11.842,11.842,0,0,1-2.364,3.674,11.168,11.168,0,0,1-4.177,2.7,15.278,15.278,0,0,1-4.464.973l-.883-2.179a10.026,10.026,0,0,0,7.175-2.666,8.665,8.665,0,0,0,2.774-6.491,6.344,6.344,0,0,0-6.493-6.475h-3.3l-3.729-.06.5-2.171h7.027a8.632,8.632,0,0,1,6.163,2.44A8.118,8.118,0,0,1,251.922,262.124Z" transform="translate(-231.528 -253.538)"/>
-              <path id="Path_2465" data-name="Path 2465" class="cls-2" d="M546.313,265.54a5.552,5.552,0,0,0,5.232-5.868,5.79,5.79,0,0,0-1.757-4.42,6.37,6.37,0,0,0-4.567-1.663h-8.083l.709,2.233h.312l1.465,0h5.294a4.021,4.021,0,0,1,2.9,1.077,3.662,3.662,0,0,1,1.121,2.769,3.7,3.7,0,0,1-1.121,2.781,3.982,3.982,0,0,1-2.9,1.092h-2.778l1.53,2.2,0,.009h-.024l5.144,8.019h2.963Z" transform="translate(-477.599 -253.58)"/>
-              <g id="Group_1453" data-name="Group 1453" transform="translate(21.63 0.011)">
-                <path id="Path_2466" data-name="Path 2466" class="cls-2" d="M337.3,253.6l8.036,19.927H342.5l-1.763-4.422h-9.87l.947-2.274H340l-3.972-10.118Z" transform="translate(-330.864 -253.596)"/>
-              </g>
-              <path id="Path_2467" data-name="Path 2467" class="cls-2" d="M415.506,253.59H400.389V255.8h6.3v17.716h2.48V255.8h6.333Z" transform="translate(-365.982 -253.581)"/>
-              <g id="Group_1454" data-name="Group 1454" transform="translate(47.628 0.011)">
-                <path id="Path_2468" data-name="Path 2468" class="cls-2" d="M480.359,253.6l-8.036,19.927h2.837l1.763-4.422h9.87l-.947-2.274h-8.189l3.972-10.118Z" transform="translate(-472.324 -253.596)"/>
-              </g>
+            svg:hover .cls-2{
+              fill: #f9a700;
+            }
+          </style>
+        </defs>
+        <g id="Component_11_8" data-name="Component 11 – 8" transform="translate(0 0.5)">
+          <g id="Group_1455" data-name="Group 1455" transform="translate(0 3.981)">
+            <path id="Path_2463" data-name="Path 2463" class="cls-1" d="M219.284,320.136h-6.116l2.22-9.621,1.587,3.92.06.15,1.345,3.321Z" transform="translate(-213.169 -300.043)"/>
+            <path id="Path_2464" data-name="Path 2464" class="cls-2" d="M251.922,262.124a10.953,10.953,0,0,1-.8,4.111,11.842,11.842,0,0,1-2.364,3.674,11.168,11.168,0,0,1-4.177,2.7,15.278,15.278,0,0,1-4.464.973l-.883-2.179a10.026,10.026,0,0,0,7.175-2.666,8.665,8.665,0,0,0,2.774-6.491,6.344,6.344,0,0,0-6.493-6.475h-3.3l-3.729-.06.5-2.171h7.027a8.632,8.632,0,0,1,6.163,2.44A8.118,8.118,0,0,1,251.922,262.124Z" transform="translate(-231.528 -253.538)"/>
+            <path id="Path_2465" data-name="Path 2465" class="cls-2" d="M546.313,265.54a5.552,5.552,0,0,0,5.232-5.868,5.79,5.79,0,0,0-1.757-4.42,6.37,6.37,0,0,0-4.567-1.663h-8.083l.709,2.233h.312l1.465,0h5.294a4.021,4.021,0,0,1,2.9,1.077,3.662,3.662,0,0,1,1.121,2.769,3.7,3.7,0,0,1-1.121,2.781,3.982,3.982,0,0,1-2.9,1.092h-2.778l1.53,2.2,0,.009h-.024l5.144,8.019h2.963Z" transform="translate(-477.599 -253.58)"/>
+            <g id="Group_1453" data-name="Group 1453" transform="translate(21.63 0.011)">
+              <path id="Path_2466" data-name="Path 2466" class="cls-2" d="M337.3,253.6l8.036,19.927H342.5l-1.763-4.422h-9.87l.947-2.274H340l-3.972-10.118Z" transform="translate(-330.864 -253.596)"/>
             </g>
-            <g id="Group_1457" data-name="Group 1457" transform="translate(72.857)">
-              <g id="Group_1456" data-name="Group 1456" transform="translate(1.04 0.667)">
-                <path id="Path_2469" data-name="Path 2469" class="cls-2" d="M617.054,237.709h-.4l-.628-.852h-.4v.852h-.354v-2.2h.8a.772.772,0,0,1,.541.189.627.627,0,0,1,.207.486.656.656,0,0,1-.112.381.645.645,0,0,1-.312.241Zm-1.436-1.891v.725h.444a.4.4,0,0,0,.286-.1.343.343,0,0,0,.105-.262.348.348,0,0,0-.105-.264.4.4,0,0,0-.286-.1Z" transform="translate(-615.264 -235.504)"/>
-              </g>
-              <circle id="Ellipse_14" data-name="Ellipse 14" class="cls-3" cx="1.757" cy="1.757" r="1.757" transform="translate(0 0)"/>
+            <path id="Path_2467" data-name="Path 2467" class="cls-2" d="M415.506,253.59H400.389V255.8h6.3v17.716h2.48V255.8h6.333Z" transform="translate(-365.982 -253.581)"/>
+            <g id="Group_1454" data-name="Group 1454" transform="translate(47.628 0.011)">
+              <path id="Path_2468" data-name="Path 2468" class="cls-2" d="M480.359,253.6l-8.036,19.927h2.837l1.763-4.422h9.87l-.947-2.274h-8.189l3.972-10.118Z" transform="translate(-472.324 -253.596)"/>
             </g>
           </g>
-        </svg>        
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item px-lg-4">
-            <a class="nav-link active" aria-current="page" href="products.html">Products</a>
-          </li>
-          <li class="nav-item px-lg-4  fw-bold">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item px-lg-4">
-            <a class="nav-link" href="caseStudies.html">Case Studies</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <a class="nav-link" href="connect.html">Connect</a>
-        </form>
+          <g id="Group_1457" data-name="Group 1457" transform="translate(72.857)">
+            <g id="Group_1456" data-name="Group 1456" transform="translate(1.04 0.667)">
+              <path id="Path_2469" data-name="Path 2469" class="cls-2" d="M617.054,237.709h-.4l-.628-.852h-.4v.852h-.354v-2.2h.8a.772.772,0,0,1,.541.189.627.627,0,0,1,.207.486.656.656,0,0,1-.112.381.645.645,0,0,1-.312.241Zm-1.436-1.891v.725h.444a.4.4,0,0,0,.286-.1.343.343,0,0,0,.105-.262.348.348,0,0,0-.105-.264.4.4,0,0,0-.286-.1Z" transform="translate(-615.264 -235.504)"/>
+            </g>
+            <circle id="Ellipse_14" data-name="Ellipse 14" class="cls-3" cx="1.757" cy="1.757" r="1.757" transform="translate(0 0)"/>
+          </g>
+        </g>
+      </svg>        
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item px-lg-4">
+          <a class="nav-link active" aria-current="page" href="products.html">Products</a>
+        </li>
+        <li class="nav-item px-lg-4">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item px-lg-4">
+          <a class="nav-link" href="caseStudies.html">Case Studies</a>
+        </li>
+      </ul>
+      <div class="d-flex">
+        <a class="nav-link px-lg-5" href="connect.html">Connect</a>
       </div>
     </div>
-  </nav>
+</nav>
 
   <section id="aboutUs">
     <div class="aboutUsContent">
       <div class="content1">
         <div class="content1Container">
           <img src="./assets/Group 1467.png" alt="" class="img-fluid">
+          <div data-aos="fade-up"
+		             data-aos-offset="200"
+		             data-aos-delay="100"
+		             data-aos-duration="1000"
+		             data-aos-easing="ease-in-out"style="text-align: center;">
           <p id="content1Para1">
             Datar Engineering was founded by Mr. Makarand Datar and his father Dr. N. S. Datar, over 3 decades ago. Dr. N. S. Datar served previously as Managing Director of the Rourkela Steel Plant under Steel Authority of India Ltd. Mr. Makarand Datar is a Mechanical Engineer by profession and was working in Sales and Marketing for a renowned pump manufacturing company in Pune, before his passion and determination to start a venture of his own culminated in the formation of our company.
           </p>
+          </div>
+
+          <div data-aos="fade-up"
+		             data-aos-offset="200"
+		             data-aos-delay="100"
+		             data-aos-duration="1000"
+		             data-aos-easing="ease-in-out"style="text-align: center;">
           <p class="fst-italic fw-bold" id="content1Para2">
             “Coming together is a beginning,<br> keeping together is progress, working together is success” <br>- Henry Ford Sr.
           </p>
+          </div>
+
+          <div data-aos="fade-up"
+		             data-aos-offset="200"
+		             data-aos-delay="100"
+		             data-aos-duration="1000"
+		             data-aos-easing="ease-in-out"style="text-align: center;">
           <p id="content1Para3">
             Henry Ford’s words are strong insight into the functioning of our company, Datar Engineering and Consultancy Private Limited. We value a honest, straightforward and organized way of working and strive to design all our processes along these lines. We very strongly believe in the traditional family business ethos of empathy towards one’s coworkers, a non hierarchical style of working and steady paced expansion. Each person in our company follows a culture which values customer satisfaction and timely service over chasing profits. We believe in forming long term partnerships with our client companies. This is demonstrated by the fact that over 80% of our customers are repeat customers. Our customer’s satisfaction with our services is the foundation on which we wish to build our legacy. Our company has always maintained human safety as our first and foremost priority. Our equipment is designed using the “poka-yoke principle, which in other words means “mistake-proofing”. Our equipment has a fixed sequence of operation ensured by a system of mechanical and electrical interlocks such that any unskilled person may also operate the equipment safely. Our equipment eliminates the need for manual transportation of goods, thereby reducing safety hazards, long-term health effects and fatigue while increasing the overall productivity of individuals. Our client companies have experienced direct benefits in the form of reduced human safety hazards and a general increase in company operational output.
           </p>
+          </div>
         </div>
       </div>
       <div class="content2">
         <div class="content2Container">
-
-          <p class="fs-3 fw-bold" id="content2Title"><i class="fas fa-caret-up arrowIcon1"></i> OUR TEAM</p>
+          <div data-aos="fade-up"
+		             data-aos-offset="200"
+		             data-aos-delay="100"
+                 data-aos-duration="1000"
+		             data-aos-easing="ease-in-out"style="text-align: center;">
+          <p class="fs-3 fw-bold" id="content2Title">OUR TEAM</p>
+          </div>
           <div class="teamMember">
+            <div data-aos="fade-up"
+		             data-aos-offset="200"
+		             data-aos-delay="100"
+                 data-aos-duration="1000"
+		             data-aos-easing="ease-in-out"style="text-align: center;">
             <div class="memberTitle">
               <img src="./assets/IMG_1497.png" class="img-fluid">
               <div>
                 <p class="fs-4 fw-bold fst-italic memberName">MAKRAND<br>DATAR</p>
                 <p class="fs-5 fw-bold memberDesignation">FOUNDER,<br>Datar Engineering and<br>Consultancy Pvt. Ltd.(1989)</p>
+                </div>
               </div>
             </div>
+
+            <div data-aos="fade-up"
+		             data-aos-offset="200"
+		             data-aos-delay="100"
+                 data-aos-duration="1000"
+		             data-aos-easing="ease-in-out"style="text-align: center;">
             <p class="memberDetails">
               BE (Mechanical) by education. Started career in Sales at Kishor Pumps in 1986. Founded Datar Engineering and Consultancy Pvt. Ltd. in 1989. Company has grown from 0 to current size under his guidance and effort. He primarily looks after Finance and Sales.
             </p>
+            </div>
           </div>
           <div class="teamMember">
+            <div data-aos="fade-up"
+		             data-aos-offset="200"
+		             data-aos-delay="100"
+		             data-aos-duration="1000"
+		             data-aos-easing="ease-in-out"style="text-align: center;">
             <div class="memberTitle">
               <img src="./assets/TanmayBW.jpg" class="img-fluid">
               <div>
                 <p class="fs-4 fw-bold fst-italic memberName">TANMAY<br>DATAR</p>
                 <p class="fs-5 fw-bold memberDesignation">DIRECTOR,<br>Datar Engineering and<br>Consultancy Pvt. Ltd.(1989)</p>
+                </div>
               </div>
             </div>
+            <div data-aos="fade-up"
+		             data-aos-offset="200"
+		             data-aos-delay="100"
+		             data-aos-duration="1000"
+		             data-aos-easing="ease-in-out"style="text-align: center;">
             <p class="memberDetails">
               BE (Mechanical) by education. Started career with Datar Engineering in 2011. Started out as a design engineer. Currently working as Director. Responsible for technical designs, digitalization and continuous improvement of processes, project costing, marketing.
             </p>
+            </div>
           </div>
           <div class="teamMember">
+            <div data-aos="fade-up"
+		             data-aos-offset="200"
+		             data-aos-delay="100"
+                 data-aos-duration="1000"
+		             data-aos-easing="ease-in-out"style="text-align: center;">
             <div class="memberTitle">
               <img src="./assets/FrancisBW.png" class="img-fluid">
               <div>
                 <p class="fs-4 fw-bold fst-italic memberName">FRANCIS D'SOUZA</p>
                 <p class="fs-5 fw-bold memberDesignation">GENERAL MANAGER,<br>(Manufacturing),<br>Datar Engineering and<br>Consultancy Pvt. Ltd.(1989)</p>
+                </div>
               </div>
             </div>
+            <div data-aos="fade-up"
+		             data-aos-offset="200"
+		             data-aos-delay="100"
+		             data-aos-duration="1000"
+		             data-aos-easing="ease-in-out"style="text-align: center;">
             <p class="memberDetails">
               He has been with Datar Engg since 2001. Began his career as a design engineer. His work with Indianising the original American design of our primary product viz. the VRC, has been the deciding factor behind our growth as a brand. Currently the head of manufacturing. Designated as General Manager (Manufacturing).
             </p>
+            </div>
           </div>
           <div class="teamMember">
+            <div data-aos="fade-up"
+		             data-aos-offset="200"
+		             data-aos-delay="100"
+		             data-aos-duration="1000"
+		             data-aos-easing="ease-in-out"style="text-align: center;">
             <div class="memberTitle">
               <img src="./assets/Mask Group 1.png" class="img-fluid">
               <div>
                 <p class="fs-4 fw-bold fst-italic memberName">VIVEK MODAK</p>
                 <p class="fs-5 fw-bold memberDesignation">GENERAL MANAGER,<br>(Sales),<br>Datar Engineering and<br>Consultancy Pvt. Ltd.(1989)</p>
+                </div>
               </div>
             </div>
+            <div data-aos="fade-up"
+		             data-aos-offset="200"
+		             data-aos-delay="100"
+		             data-aos-duration="1000"
+		             data-aos-easing="ease-in-out"style="text-align: center;">
             <p class="memberDetails">
               Diploma in Mechanical Engineering. He has been with Datar Engg since 2003. He has been in Sales and manages projects since he joined us and continues in that same role today with a designation of General Manager (Sales).
             </p>
+            </div>
           </div>
           <div class="teamMember">
+            <div data-aos="fade-up"
+		             data-aos-offset="200"
+		             data-aos-delay="100"
+		             data-aos-duration="1000"
+		             data-aos-easing="ease-in-out"style="text-align: center;">
             <div class="memberTitle">
               <img src="./assets/Mask Group 5.png" class="img-fluid">
               <div>
                 <p class="fs-4 fw-bold fst-italic memberName">SUDHIR KHADILKAR</p>
                 <p class="fs-5 fw-bold memberDesignation">DEPUTY GENERAL MANAGER,<br>Datar Engineering and<br>Consultancy Pvt. Ltd.(1989)</p>
+                </div>
               </div>
             </div>
+            <div data-aos="fade-up"
+		             data-aos-offset="200"
+		             data-aos-delay="100"
+		             data-aos-duration="1000"
+		             data-aos-easing="ease-in-out"style="text-align: center;">
             <p class="memberDetails">
               Joined our company back in 1990. He is our chief technical person for electrical and control systems. He has designed everything from scratch and made it up to the level it is at today. He is designated as Deputy General Manager.
             </p>
+            </div>
           </div>
           <div class="teamMember">
+            <div data-aos="fade-up"
+		             data-aos-offset="200"
+		             data-aos-delay="100"
+                 data-aos-duration="1000"
+		             data-aos-easing="ease-in-out"style="text-align: center;">
             <div class="memberTitle">
               <img src="./assets/Rohidas BW.png" class="img-fluid">
               <div>
                 <p class="fs-4 fw-bold fst-italic memberName">ROHIDAS NANAWARE</p>
                 <p class="fs-5 fw-bold memberDesignation">SALES,<br>Datar Engineering and<br>Consultancy Pvt. Ltd.(1989)</p>
+                </div>
               </div>
             </div>
+
+            <div data-aos="fade-up"
+		             data-aos-offset="200"
+		             data-aos-delay="100"
+                 data-aos-duration="1000"
+		             data-aos-easing="ease-in-out"style="text-align: center;">
             <p class="memberDetails">
               BE (Mechanical) by education. Joined the company in 2016. Has been responsible for Sales since joining.
             </p>
+            </div>
           </div>
+          <div data-aos="fade-up"
+		             data-aos-offset="200"
+		             data-aos-delay="100"
+                 data-aos-duration="1000"
+		             data-aos-easing="ease-in-out"style="text-align: center;">
           <img src="./assets/_SPS6220 copy.jpg" alt="" class="img-fluid">
+          </div>
         </div>
       </div>
       <section class="scrollToTop">
         <a href="#" class="mx-auto">
-          <i class="fas fa-caret-up fa-2x arrowIcon2"></i>
+          <i class="fas fa-chevron-up fa-2x arrowIcon2"></i>
         </a>
       </section>
       <footer class="text-white bg-dark">
@@ -240,54 +349,6 @@
       </video>
     </div>
   </section>
-
-  <!-- <footer class="text-white bg-dark">
-    <div class="row">
-      <div class="col-12 col-md-4">
-        <div class="row text-center py-4">
-          <div class="col-12 py-3">
-            <p class="fs-5 fw-bold">Locations</p>
-          </div>
-          <div class="col-12 py-3">
-            <p class="fs-6">Pune, Aundh<br>Head Office</p>
-          </div>
-          <div class="col-12 py-3">
-            <p class="fs-6">Pune, Bhosari<br> Factory</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="row text-center py-4">
-          <div class="col-12 py-3">
-            <p class="fs-5 fw-bold">About us.</p>
-          </div>
-          <div class="col-12 py-3">
-            <p class="fs-5 fw-bold">Discover our products.</p>
-          </div>
-          <div class="col-12 py-3">
-            <p class="fs-5 fw-bold">Contact us.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="row text-center py-4">
-          <div class="col-12 py-3">
-            <p class="fs-5 fw-bold">Testimonials</p>
-          </div>
-          <div class="col-12 py-4">
-            <p class="fs-6"></p>
-          </div>
-          <div class="col-12 py-3">
-            <i class="fab fa-whatsapp border border-2 rounded-circle p-2 footerIcons m-2"></i>
-            <i class="fab fa-instagram border border-2 rounded-circle p-2 footerIcons m-2"></i>
-            <i class="fab fa-linkedin-in border border-2 rounded-circle p-2 footerIcons m-2"></i>
-            <i class="fab fa-facebook-f border border-2 rounded-circle p-2 footerIcons m-2"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer> -->
-
 
   <!--Custom JavaScript  -->
   <script src="index.js"></script>

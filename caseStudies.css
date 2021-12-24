@@ -16,5 +16,9 @@ body {
 #caseStudiesContent {
   z-index: 5;
   background: rgb(255, 255, 255, 0.5);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(30px);
+}
+
+.datar {
+  cursor: url('./assets/circle.png'), auto;
 }

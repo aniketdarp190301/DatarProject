@@ -10,7 +10,7 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
   min-height: 100vh;
   min-width: 100%;
 }
@@ -22,7 +22,7 @@
 
 .content1 {
   background: rgb(255, 255, 255, 0.5);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(40px);
 }
 
 .content1Container {
@@ -93,4 +93,8 @@
   max-width: 600px;
   margin: 0 auto;
   padding-bottom: 200px;
+}
+
+.datar {
+  cursor: url('./assets/circle.png'), auto;
 }

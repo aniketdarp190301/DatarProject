@@ -53,6 +53,8 @@
 
 #productImg img {
   max-height: 500px;
+  min-height: 500px;
+  object-fit: cover;
 }
 
 #productVideo {
@@ -71,7 +73,20 @@
   padding-top: 1.5em;
 }
 
+.datar {
+  cursor: url('./assets/circle.png'), auto;
+}
+
+
 /*#productContent:hover{
   color: blue;
 }
+*/
 
+@media(max-width:420px)
+{
+  #mainProducts .container{
+    background: rgb(0,0,0,0.9);
+  }
+
+}
