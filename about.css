@@ -23,6 +23,7 @@
 .content1 {
   background: rgb(255, 255, 255, 0.5);
   backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
 }
 
 .content1Container {
@@ -97,10 +98,4 @@
 
 .datar {
   cursor: url('./assets/circle.png'), auto;
-}
-
-@media (max-width: 420px) {
-  .content1 {
-    background: rgb(255, 255, 255);
-  }
 }
