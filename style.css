@@ -31,7 +31,7 @@ a:hover {
   padding: 20px 50px;
 }
 
-#mainNav .navbar-toggler{
+#mainNav .navbar-toggler {
   border: none;
 }
 
@@ -239,7 +239,7 @@ footer a:hover {
   transform: rotate(0deg);
 }
 
-.arrowIcon3 {
+.arrowIcon {
   color: #f9a700;
   transition: 0.5s;
   transform: rotate(0deg);

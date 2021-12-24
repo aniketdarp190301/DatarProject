@@ -98,3 +98,9 @@
 .datar {
   cursor: url('./assets/circle.png'), auto;
 }
+
+@media (max-width: 420px) {
+  .content1 {
+    background: rgb(255, 255, 255);
+  }
+}
