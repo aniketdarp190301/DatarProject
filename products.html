@@ -14,6 +14,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    function show(x) {
+      console.log('Here')
+      var hamburger = document.getElementById('navtoggle')
+      var hamcross = document.getElementById('navcross')
+      console.log(hamburger)
+      if (x == 1) {
+        hamburger.style.display = "none"
+        hamcross.style.display = "block"
+      }
+      if (x == 2) {
+        hamburger.style.display = "block"
+        hamcross.style.display = "none"
+      }
+    }
+  </script>
   <title>Datar | Home </title>
 </head>
 <body>
@@ -71,9 +87,16 @@
         </g>
       </svg>        
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler" id="navtoggle" type="button" data-bs-toggle="collapse" onclick="show(1)"  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="bi bi-list" ></span>
     </button>
+    
+    <button class="navbar-toggler" id="navcross" style="display: none" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="bi bi-x" onclick="show(2)"></span>
+    </button>
+
+    
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item px-lg-4">

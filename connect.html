@@ -13,6 +13,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    function show(x) {
+      console.log('Here')
+      var hamburger = document.getElementById('navtoggle')
+      var hamcross = document.getElementById('navcross')
+      console.log(hamburger)
+      if (x == 1) {
+        hamburger.style.display = "none"
+        hamcross.style.display = "block"
+      }
+      if (x == 2) {
+        hamburger.style.display = "block"
+        hamcross.style.display = "none"
+      }
+    }
+  </script>
   <title>Datar | Home </title>
 </head>
 <body>
@@ -20,78 +36,83 @@
 	<script>
 		AOS.init();
 	</script>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white py-3" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand px-lg-5 datar" href="index.html">
-        <svg xmlns="http://www.w3.org/2000/svg" width="76.87" height="24.671" viewBox="0 0 76.87 24.671">
-          <defs>
-            <style>
-              .cls-1 {
-                fill: #f9a700;
-              }
-        
-              .cls-2 {
-                fill: #443f41;
-              }
-        
-              .cls-3 {
-                fill: none;
-                stroke: #443f41;
-                stroke-miterlimit: 10;
-              }
+  <nav class="navbar navbar-expand-lg navbar-light bg-white" id="mainNav">
+    <a class="navbar-brand px-lg-5 datar" href="index.html">
+      <svg xmlns="http://www.w3.org/2000/svg" width="76.87" height="24.671" viewBox="0 0 76.87 24.671">
+        <defs>
+          <style>
+            .cls-1 {
+              fill: #f9a700;
+            }
+      
+            .cls-2 {
+              fill: #443f41;
+            }
+      
+            .cls-3 {
+              fill: none;
+              stroke: #443f41;
+              stroke-miterlimit: 10;
+            }
 
-              svg:hover .cls-1{
-                fill: #443f41;
-              }
+            svg:hover .cls-1{
+              fill: #443f41;
+            }
 
-              svg:hover .cls-2{
-                fill: #f9a700;
-              }
-            </style>
-          </defs>
-          <g id="Component_11_8" data-name="Component 11 – 8" transform="translate(0 0.5)">
-            <g id="Group_1455" data-name="Group 1455" transform="translate(0 3.981)">
-              <path id="Path_2463" data-name="Path 2463" class="cls-1" d="M219.284,320.136h-6.116l2.22-9.621,1.587,3.92.06.15,1.345,3.321Z" transform="translate(-213.169 -300.043)"/>
-              <path id="Path_2464" data-name="Path 2464" class="cls-2" d="M251.922,262.124a10.953,10.953,0,0,1-.8,4.111,11.842,11.842,0,0,1-2.364,3.674,11.168,11.168,0,0,1-4.177,2.7,15.278,15.278,0,0,1-4.464.973l-.883-2.179a10.026,10.026,0,0,0,7.175-2.666,8.665,8.665,0,0,0,2.774-6.491,6.344,6.344,0,0,0-6.493-6.475h-3.3l-3.729-.06.5-2.171h7.027a8.632,8.632,0,0,1,6.163,2.44A8.118,8.118,0,0,1,251.922,262.124Z" transform="translate(-231.528 -253.538)"/>
-              <path id="Path_2465" data-name="Path 2465" class="cls-2" d="M546.313,265.54a5.552,5.552,0,0,0,5.232-5.868,5.79,5.79,0,0,0-1.757-4.42,6.37,6.37,0,0,0-4.567-1.663h-8.083l.709,2.233h.312l1.465,0h5.294a4.021,4.021,0,0,1,2.9,1.077,3.662,3.662,0,0,1,1.121,2.769,3.7,3.7,0,0,1-1.121,2.781,3.982,3.982,0,0,1-2.9,1.092h-2.778l1.53,2.2,0,.009h-.024l5.144,8.019h2.963Z" transform="translate(-477.599 -253.58)"/>
-              <g id="Group_1453" data-name="Group 1453" transform="translate(21.63 0.011)">
-                <path id="Path_2466" data-name="Path 2466" class="cls-2" d="M337.3,253.6l8.036,19.927H342.5l-1.763-4.422h-9.87l.947-2.274H340l-3.972-10.118Z" transform="translate(-330.864 -253.596)"/>
-              </g>
-              <path id="Path_2467" data-name="Path 2467" class="cls-2" d="M415.506,253.59H400.389V255.8h6.3v17.716h2.48V255.8h6.333Z" transform="translate(-365.982 -253.581)"/>
-              <g id="Group_1454" data-name="Group 1454" transform="translate(47.628 0.011)">
-                <path id="Path_2468" data-name="Path 2468" class="cls-2" d="M480.359,253.6l-8.036,19.927h2.837l1.763-4.422h9.87l-.947-2.274h-8.189l3.972-10.118Z" transform="translate(-472.324 -253.596)"/>
-              </g>
+            svg:hover .cls-2{
+              fill: #f9a700;
+            }
+          </style>
+        </defs>
+        <g id="Component_11_8" data-name="Component 11 – 8" transform="translate(0 0.5)">
+          <g id="Group_1455" data-name="Group 1455" transform="translate(0 3.981)">
+            <path id="Path_2463" data-name="Path 2463" class="cls-1" d="M219.284,320.136h-6.116l2.22-9.621,1.587,3.92.06.15,1.345,3.321Z" transform="translate(-213.169 -300.043)"/>
+            <path id="Path_2464" data-name="Path 2464" class="cls-2" d="M251.922,262.124a10.953,10.953,0,0,1-.8,4.111,11.842,11.842,0,0,1-2.364,3.674,11.168,11.168,0,0,1-4.177,2.7,15.278,15.278,0,0,1-4.464.973l-.883-2.179a10.026,10.026,0,0,0,7.175-2.666,8.665,8.665,0,0,0,2.774-6.491,6.344,6.344,0,0,0-6.493-6.475h-3.3l-3.729-.06.5-2.171h7.027a8.632,8.632,0,0,1,6.163,2.44A8.118,8.118,0,0,1,251.922,262.124Z" transform="translate(-231.528 -253.538)"/>
+            <path id="Path_2465" data-name="Path 2465" class="cls-2" d="M546.313,265.54a5.552,5.552,0,0,0,5.232-5.868,5.79,5.79,0,0,0-1.757-4.42,6.37,6.37,0,0,0-4.567-1.663h-8.083l.709,2.233h.312l1.465,0h5.294a4.021,4.021,0,0,1,2.9,1.077,3.662,3.662,0,0,1,1.121,2.769,3.7,3.7,0,0,1-1.121,2.781,3.982,3.982,0,0,1-2.9,1.092h-2.778l1.53,2.2,0,.009h-.024l5.144,8.019h2.963Z" transform="translate(-477.599 -253.58)"/>
+            <g id="Group_1453" data-name="Group 1453" transform="translate(21.63 0.011)">
+              <path id="Path_2466" data-name="Path 2466" class="cls-2" d="M337.3,253.6l8.036,19.927H342.5l-1.763-4.422h-9.87l.947-2.274H340l-3.972-10.118Z" transform="translate(-330.864 -253.596)"/>
             </g>
-            <g id="Group_1457" data-name="Group 1457" transform="translate(72.857)">
-              <g id="Group_1456" data-name="Group 1456" transform="translate(1.04 0.667)">
-                <path id="Path_2469" data-name="Path 2469" class="cls-2" d="M617.054,237.709h-.4l-.628-.852h-.4v.852h-.354v-2.2h.8a.772.772,0,0,1,.541.189.627.627,0,0,1,.207.486.656.656,0,0,1-.112.381.645.645,0,0,1-.312.241Zm-1.436-1.891v.725h.444a.4.4,0,0,0,.286-.1.343.343,0,0,0,.105-.262.348.348,0,0,0-.105-.264.4.4,0,0,0-.286-.1Z" transform="translate(-615.264 -235.504)"/>
-              </g>
-              <circle id="Ellipse_14" data-name="Ellipse 14" class="cls-3" cx="1.757" cy="1.757" r="1.757" transform="translate(0 0)"/>
+            <path id="Path_2467" data-name="Path 2467" class="cls-2" d="M415.506,253.59H400.389V255.8h6.3v17.716h2.48V255.8h6.333Z" transform="translate(-365.982 -253.581)"/>
+            <g id="Group_1454" data-name="Group 1454" transform="translate(47.628 0.011)">
+              <path id="Path_2468" data-name="Path 2468" class="cls-2" d="M480.359,253.6l-8.036,19.927h2.837l1.763-4.422h9.87l-.947-2.274h-8.189l3.972-10.118Z" transform="translate(-472.324 -253.596)"/>
             </g>
           </g>
-        </svg>        
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item px-lg-4">
-            <a class="nav-link" aria-current="page" href="products.html">Products</a>
-          </li>
-          <li class="nav-item px-lg-4">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item px-lg-4">
-            <a class="nav-link" href="caseStudies.html">Case Studies</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <a class="nav-link fw-bold" href="connect.html">Connect</a>
-        </form>
+          <g id="Group_1457" data-name="Group 1457" transform="translate(72.857)">
+            <g id="Group_1456" data-name="Group 1456" transform="translate(1.04 0.667)">
+              <path id="Path_2469" data-name="Path 2469" class="cls-2" d="M617.054,237.709h-.4l-.628-.852h-.4v.852h-.354v-2.2h.8a.772.772,0,0,1,.541.189.627.627,0,0,1,.207.486.656.656,0,0,1-.112.381.645.645,0,0,1-.312.241Zm-1.436-1.891v.725h.444a.4.4,0,0,0,.286-.1.343.343,0,0,0,.105-.262.348.348,0,0,0-.105-.264.4.4,0,0,0-.286-.1Z" transform="translate(-615.264 -235.504)"/>
+            </g>
+            <circle id="Ellipse_14" data-name="Ellipse 14" class="cls-3" cx="1.757" cy="1.757" r="1.757" transform="translate(0 0)"/>
+          </g>
+        </g>
+      </svg>        
+    </a>
+    <button class="navbar-toggler" id="navtoggle" type="button" data-bs-toggle="collapse" onclick="show(1)"  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="bi bi-list" ></span>
+    </button>
+    
+    <button class="navbar-toggler" id="navcross" style="display: none" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="bi bi-x" onclick="show(2)"></span>
+    </button>
+
+    
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item px-lg-4">
+          <a class="nav-link active" aria-current="page" href="products.html">Products</a>
+        </li>
+        <li class="nav-item px-lg-4">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item px-lg-4">
+          <a class="nav-link" href="caseStudies.html">Case Studies</a>
+        </li>
+      </ul>
+      <div class="d-flex">
+        <a class="nav-link px-lg-5" href="connect.html">Connect</a>
       </div>
     </div>
-  </nav>
+</nav>
 
   <!-- <section id="connect" class="mx-auto my-5">
     <div class="connectBox text-center w-50 mx-auto p-5">
