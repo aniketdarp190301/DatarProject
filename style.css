@@ -109,7 +109,7 @@ header .overlay {
 }
 
 .productsTitle {
-  padding: 150px 0 50px 0;
+  padding: 50px 0 50px 0;
   margin: 0;
 }
 
@@ -175,7 +175,7 @@ header .overlay {
 }
 
 .clientsTitle {
-  padding: 100px 0px 50px 0px;
+  padding: 50px 0px 50px 0px;
 }
 
 #showcase {
@@ -210,7 +210,7 @@ footer a:hover {
 .scrollToTop {
   min-width: 100%;
   text-align: center;
-  padding: 150px 0 50px 0;
+  padding: 50px 0 50px 0;
 }
 
 .scrollToTop a {
