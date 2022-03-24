@@ -18,6 +18,12 @@
   cursor: url('./assets/circle.png'), auto;
 }
 
+#enquiry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #enquiryForm {
   background: #f9a700;
   display: flex;
