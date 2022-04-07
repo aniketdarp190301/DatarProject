@@ -4,6 +4,10 @@
 .contactUs {
   background-color: #f9a700;
   cursor: url('./assets/con_pointer.png'), auto;
+  width: 90%;
+  max-width: 600px;
+  margin:0 auto;
+  border-radius: 10px;
 }
 .map {
   min-height: 100%;
